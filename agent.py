@@ -1,6 +1,7 @@
 import subprocess
 from file_ops import save_to_file, execute_file
 from config import MODEL_NAME
+from config import TIMEOUT_SECONDS
 from prompt_templates import SYSTEM_PROMPT
 import os
 from dataset_utils import replace_known_datasets
@@ -22,7 +23,7 @@ class CodingAgent:
             ["ollama", "run", MODEL_NAME, full_prompt],
             capture_output=True,
             text=True,
-            timeout=60
+            timeout=TIMEOUT_SECONDS
         )
         return result.stdout.strip()
 
