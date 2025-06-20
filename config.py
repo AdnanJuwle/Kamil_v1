@@ -1,2 +1,2 @@
-MODEL_NAME = "deepseek-coder:33b"
+MODEL_NAME = "mistral:latest"
 TIMEOUT_SECONDS = 300
