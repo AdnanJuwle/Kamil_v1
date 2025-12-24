@@ -1,0 +1,15 @@
+# AI Coding Assistant - Python Dependencies
+# This project uses a local Ollama LLM for code generation
+
+# Core dependencies
+# Note: Ollama must be installed separately from https://ollama.ai
+# The ollama CLI tool should be in your system PATH
+
+# UI Framework
+gradio>=4.0.0
+
+# Optional: For development
+# pytest>=7.0.0  # For testing (if you add tests)
+# black>=23.0.0  # For code formatting
+# mypy>=1.0.0    # For type checking
+
